@@ -1,0 +1,155 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+  TiendaPromElec -> C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec\bin\Debug\net8.0\TiendaPromElec.dll
+  TiendaPromElec.Tests -> C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\bin\Debug\net8.0\TiendaPromElec.Tests.dll
+Test run for C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\bin\Debug\net8.0\TiendaPromElec.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.PostProduct_ValidItem_CreatesResource [44 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.PostProduct_ValidItem_CreatesResource() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 126
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.PutProduct_ValidUpdate_ReturnsNoContent [2 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.PutProduct_ValidUpdate_ReturnsNoContent() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 183
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.GetProducts_WithToken_ReturnsList [1 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetProducts_WithToken_ReturnsList() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 115
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.PutProduct_NonExistent_ReturnsNotFound [2 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.PutProduct_NonExistent_ReturnsNotFound() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 211
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.DeleteProduct_ValidId_ReturnsNoContent [2 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.DeleteProduct_ValidId_ReturnsNoContent() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 159
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.PostProduct_InvalidModel_ReturnsBadRequest [1 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.PostProduct_InvalidModel_ReturnsBadRequest() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 138
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.GetProduct_InvalidId_ReturnsNotFound [2 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetProduct_InvalidId_ReturnsNotFound() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 149
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.PutProduct_IdMismatch_ReturnsBadRequest [1 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.PutProduct_IdMismatch_ReturnsBadRequest() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 199
+--- End of stack trace from previous location ---
+  Failed TiendaPromElec.IntegrationTests.AllIntegrationTests.DeleteProduct_InvalidId_ReturnsNotFound [1 ms]
+  Error Message:
+   System.Text.Json.JsonException : The JSON value could not be converted to Newtonsoft.Json.Linq.JToken. Path: $.token | LineNumber: 0 | BytePositionInLine: 179.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.GetAdminToken() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 25
+   at TiendaPromElec.IntegrationTests.AllIntegrationTests.DeleteProduct_InvalidId_ReturnsNotFound() in C:\Users\Wicho\Desktop\Dev\DevWicho\CertificadoTEC\Certificado Backend C#\Back-end Avanzado con .NET Core 8.0 LTS\TiendaPromElec.Tests\AllIntegrationTests.cs:line 173
+--- End of stack trace from previous location ---
+
+Failed!  - Failed:     9, Passed:    21, Skipped:     0, Total:    30, Duration: 831 ms - TiendaPromElec.Tests.dll (net8.0)
